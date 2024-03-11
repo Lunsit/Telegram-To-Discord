@@ -15,6 +15,8 @@ tg_chat_id = cfg['telegram']['chat_id']
 dc_channel_id = cfg['discord']['channel_id']
 dc_bot_token = cfg['discord']['token']
 test_tg_chat_id = '-114514'
+# Remove the # from the next line to allow telegram bot to reply to the message in the group
+# test_tg_chat_id = tg_chat_id
 
 # Discord API request
 def send_embed_to_discord_channel(channel_id, bot_token, embed):
