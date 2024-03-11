@@ -1,0 +1,7 @@
+telegram:
+  token: '114514:AABBCCDD'
+  chat_id: '-1114514'
+
+discord:
+  token: 'MTAABBCCDD'
+  channel_id: '114514'
