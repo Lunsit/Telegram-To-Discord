@@ -2,7 +2,7 @@ import yaml
 import requests
 
 from telegram import Update
-from telegram.ext import ApplicationBuilder, ContextTypes, CommandHandler, filters, MessageHandler
+from telegram.ext import ApplicationBuilder, ContextTypes, CommandHandler, MessageHandler, filters
 
 
 
@@ -44,7 +44,7 @@ async def tg2discord(update: Update, context: ContextTypes.DEFAULT_TYPE):
     title = 'Telegram message from: ' + update.message.from_user['first_name'] + update.message.from_user['last_name']
     content = 'Content: ' +  update.message.text
     print(title + content)
-    # Only specific groups can send messages to Discord.
+    # Only specific group can send messages to Discord.
     if update.message.chat['id'] == int(tg_chat_id):
         embed = {
             "title": title,
