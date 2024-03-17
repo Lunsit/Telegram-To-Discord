@@ -1,11 +1,9 @@
 # Telegram-To-Discord
-Mirror all messages from Telegram group to Discord via a Post requests.
+Mirror messages from Telegram group to Discord via a Post requests.
 
 # Example
-Note: Telegram bot replies with a message that appears only in the specified test group.
-
-![2024-03-11_132419](https://github.com/Lunsit/Telegram-To-Discord/assets/61680403/c68aa0d7-7799-4337-9b2f-3b9f2dcff7f1)
-![2024-03-11_132508](https://github.com/Lunsit/Telegram-To-Discord/assets/61680403/c7220a5f-9f4f-44e4-b932-12a7049df6e1)
+![1](https://github.com/Lunsit/Telegram-To-Discord/assets/61680403/a9f38cbd-f809-4b86-ac72-fda0c10a189b)
+![2](https://github.com/Lunsit/Telegram-To-Discord/assets/61680403/a9e2ee6b-aa9f-4491-ac6b-32f69bd93174)
 
 # Requirements
 
@@ -22,14 +20,21 @@ Note: Telegram bot replies with a message that appears only in the specified tes
 2. Open a CLI ex. CMD, PS, GitBash in the directory.
 3. Install requirements.
 
-```py
-pip install -r requirements.txt
+```cmd
+pip install "python-telegram-bot[job-queue]"
 ```
 
 4. Rename sample-config.yaml to config.yaml.
 5. Edit info in config.yaml.
 6. Run!
 
-```py
+```cmd
 python3 tg2dc.py
 ```
+
+# Todo
+- [x] Add image forward
+- [x] Add group image forward
+- [ ] Add file forward
+- [ ] Add large file detection
+- [ ] Maybe add stickers support
