@@ -143,7 +143,6 @@ async def new_msg(update: Update, context: ContextTypes.DEFAULT_TYPE):
         if media_type == "text":
             content = 'Content: ' +  update.message.text
             response = send_embed_to_discord_channel(dc_channel_id, dc_bot_token, title, content, update.message.link, None)
-            print(response)
 
         # If there is a media group
         elif message.media_group_id:
