@@ -41,12 +41,14 @@ tg_bot_token = cfg['telegram']['token']
 tg_chat_id = cfg['telegram']['chat_id']
 dc_channel_id = cfg['discord']['channel_id']
 dc_bot_token = cfg['discord']['token']
+
 MEDIA_GROUP_TYPES = {
     "audio": InputMediaAudio,
     "document": InputMediaDocument,
     "photo": InputMediaPhoto,
     "video": InputMediaVideo,
 }
+
 class MsgDict(TypedDict):
     media_type: Literal["video", "photo"]
     media_id: str
